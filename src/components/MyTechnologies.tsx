@@ -2,7 +2,7 @@ import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss } from "react-ico
 
 export default function MyTechnologies() {
   return (
-    <section className="text-center mt-52 mb-20">
+    <section className="text-center">
       <div>
         <h2 className="text-3xl text-gray-600 py-1 ">Technologies I use.</h2>
         <div className="mt-16 text-6xl flex justify-center flex-wrap sm:gap-7 md:gap-15">

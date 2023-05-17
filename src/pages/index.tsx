@@ -14,10 +14,12 @@ export default function Home() {
         <Head>
           <title>Davids Portfolio</title>
         </Head>
-        <main className="mx-10">
+        <main className="grid grid-rows-[100vh] mx-10">
           {/* Landing Section */}
-          <Navbar />
-          <Heading />
+          <section>
+            <Navbar />
+            <Heading />
+          </section>
           {/* Mid Section */}
           <MyTechnologies />
           {/* Bottom Section */}
