@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 // Components
-import Navbar from "../Components/Navbar";
-import Heading from "../Components/Heading";
-import MyTechnologies from "../Components/MyTechnologies";
-import Projects from "../Components/Projects";
-import Background from "../Components/Background";
+import Navbar from "../components/Navbar";
+import Heading from "../components/Heading";
+import MyTechnologies from "../components/MyTechnologies";
+import Projects from "../components/Projects";
+import Background from "../components/Background";
 
 export default function Home() {
   return (
