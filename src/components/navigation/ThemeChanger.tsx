@@ -14,7 +14,7 @@ function ThemeChanger() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div>
+    <div className="hover:-translate-y-1 duration-100">
       {currentTheme === "dark" ? (
         <BsMoonStarsFill
           className="text-white cursor-pointer"
@@ -24,7 +24,7 @@ function ThemeChanger() {
         ></BsMoonStarsFill>
       ) : (
         <BsSunFill
-          className="text-gray-800 bg-white cursor-pointer"
+          className="text-slate-700 bg-white cursor-pointer"
           onClick={() => {
             setTheme("dark");
           }}

@@ -6,6 +6,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  src: url(../../public/SF-Pro-Display-Regular.OTF);
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Medium';
+  src: url(../../public/SF-Pro-Display-Medium.OTF);
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  src: url(../../public/SF-Pro-Display-Bold.OTF);
+}
+
+h1 {
+  font-family: 'SF-Pro-Display-Bold'
+}
+
+h2 {
+  font-family: 'SF-Pro-Display-Medium'
+}
+
+h3 {
+  font-family: 'SF-Pro-Display-Regular'
+}
+
+
+
 /* Dark Theme Globals */
 
 [data-theme="dark"] h3 {
@@ -14,4 +43,8 @@
 
 [data-theme="dark"] h2 {
   @apply text-gray-300;
+}
+
+[data-theme="dark"] li {
+  @apply text-gray-400;
 }

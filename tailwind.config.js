@@ -13,7 +13,11 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: { burtons: "burtons" },
+      fontFamily: {
+        "SF-Pro-Display-Regular": ["SF-Pro-Display-Regular", "sans-serif"],
+        "SF-Pro-Display-Medium": ["SF-Pro-Display-Medium", "sans-serif"],
+        "SF-Pro-Display-Bold": ["SF-Pro-Display-Bold", "sans-serif"],
+      },
     },
   },
   plugins: [],

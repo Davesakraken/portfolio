@@ -1,0 +1,35 @@
+@keyframes fade-in-top-5 {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top-6 {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-top-5 {
+    animation: fade-in-top-5 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in-top-6 {
+    animation: fade-in-top-6 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}

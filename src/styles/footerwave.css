@@ -9,12 +9,12 @@ html[data-theme="dark"] .custom-shape-divider-top-1684262347 .shape-fill {
 }
 
 .custom-shape-divider-top-1684262347 {
-    @apply absolute top-0 left-0 w-full overflow-hidden bg-teal-400;
+    @apply absolute top-0 left-0 w-full overflow-hidden bg-slate-600;
     line-height: 0
 }
 
 .custom-shape-divider-top-1684262347 svg {
-    @apply relative block h-48 bg-teal-400;
+    @apply relative block h-48 bg-slate-600;
     width: calc(173% + 1.3px);
 }
 
@@ -23,7 +23,6 @@ html[data-theme="dark"] .custom-shape-divider-top-1684262347 .shape-fill {
     .custom-shape-divider-top-1684262347 svg {
         width: calc(165% + 1.3px);
         height: 164px;
-        background-color: rgb(81, 222, 194);
     }
 }
 
