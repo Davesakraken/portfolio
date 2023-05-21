@@ -4,7 +4,7 @@ export default function MyTechnologies() {
   return (
     <section className="text-center">
       <div>
-        <h2 className="text-3xl text-slate-600">Technologies I use ✨</h2>
+        <h2>Technologies I use ✨</h2>
         <div className="mt-20 text-6xl flex justify-center flex-wrap sm:gap-7 md:gap-15">
           <SiHtml5 className=" text-orange-600 m-5" />
           <SiCss3 className="text-blue-700 m-5" />

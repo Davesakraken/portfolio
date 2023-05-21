@@ -22,11 +22,16 @@
 }
 
 h1 {
-  font-family: 'SF-Pro-Display-Bold'
+  font-family: 'SF-Pro-Display-Bold';
+  text-align: center;
+  @apply text-5xl pt-12 py-3 font-medium;
 }
 
 h2 {
-  font-family: 'SF-Pro-Display-Medium'
+  font-family: 'SF-Pro-Display-Medium';
+  text-align: center;
+  @apply text-3xl text-slate-600;
+
 }
 
 h3 {
