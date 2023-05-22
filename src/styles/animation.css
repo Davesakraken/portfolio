@@ -1,12 +1,8 @@
-@keyframes fadeIn {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.2);
-    }
-}
+/**
+ * ----------------------------------------
+ * animation - fade
+ * ----------------------------------------
+ */
 
 @keyframes fade-in-top-5 {
     0% {
@@ -36,6 +32,12 @@
     }
 }
 
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+
 @-webkit-keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0);
@@ -64,12 +66,63 @@
     }
 }
 
+/**
+ * ----------------------------------------
+ * animation pulse-fwd
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes pulse-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
 .fade-in-top-5 {
     animation: fade-in-top-5 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .fade-in-top-6 {
-    animation: fade-in-top-6 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 20s;
+    animation: fade-in-top-6 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000), both;
 }
 
 .scale-in-center {
@@ -85,11 +138,7 @@
     transform: scale(1.2);
 }
 
-.fade-out {
-    opacity: 1;
-    transition: opacity 250ms ease-in;
-}
-
-.fade-out.appear {
-    opacity: 0;
+.pulse-fwd {
+    -webkit-animation: pulse-fwd 1.2s ease-in-out infinite both;
+    animation: pulse-fwd 1.2s ease-in-out infinite both;
 }
