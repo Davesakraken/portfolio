@@ -1,6 +1,6 @@
 import Head from "next/head";
 // Components
-import Header from "../components/Header";
+import Header from "../components/HeaderComponents/Header";
 import MyTechnologies from "../components/Technologies";
 import Background from "../components/Background";
 import Card from "../components/CardComponents/Card";
