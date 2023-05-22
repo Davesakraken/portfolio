@@ -2,7 +2,7 @@ import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiNextdotjs, SiT
 
 export default function MyTechnologies() {
   return (
-    <section className="text-center">
+    <section id="technologies" className="text-center">
       <div>
         <h2>Technologies I use ✨</h2>
         <div className=" mt-20 text-6xl flex justify-center flex-wrap sm:gap-7 md:gap-15">

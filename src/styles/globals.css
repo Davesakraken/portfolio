@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'SF-Pro-Display-Regular';
   src: url(../../public/SF-Pro-Display-Regular.OTF);
@@ -24,7 +28,7 @@
 h1 {
   font-family: 'SF-Pro-Display-Bold';
   text-align: center;
-  @apply text-5xl pt-12 py-3 font-medium;
+  @apply text-6xl pt-12 py-3;
 }
 
 h2 {
@@ -37,8 +41,6 @@ h2 {
 h3 {
   font-family: 'SF-Pro-Display-Regular'
 }
-
-
 
 /* Dark Theme Globals */
 
