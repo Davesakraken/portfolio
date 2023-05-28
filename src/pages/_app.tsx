@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "../styles/footerwave.css";
 import "../styles/animation.css";
 import { ThemeProvider } from "next-themes";
 

@@ -16,11 +16,10 @@ export default function NavigationArrow() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
-    <div className={`nav-icon ${isScrolled ? "fade-out" : "fade-in"}`}>
-      <div className="flex justify-center text-4xl mt-20 ">
-        <BsArrowDownShort className="relative pulse-fwd" />
+    <div id="scroll-arrow" className={`nav-icon ${isScrolled ? "fade-out" : "fade-in"}`}>
+      <div className="flex justify-center text-4xl mt-20">
+        <BsArrowDownShort className="relative pulse-fwd fade-in" />
       </div>
     </div>
   );

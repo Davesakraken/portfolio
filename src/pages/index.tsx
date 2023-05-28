@@ -1,10 +1,9 @@
 import Head from "next/head";
 // Components
-import Header from "../components/HeaderComponents/Header";
+import Header from "../components/Header/Header";
 import MyTechnologies from "../components/Technologies";
-import Background from "../components/Background";
-import Card from "../components/CardComponents/Card";
-import { CardData } from "../components/CardComponents/CardData";
+import MyProjects from "../components/MyProjects";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,26 +11,14 @@ export default function Home() {
       <Head>
         <title>Davids Portfolio</title>
       </Head>
-      <main className="grid grid-rows-[100vh] mx-10">
+      <header className="grid grid-rows-[100vh] mx-10">
         <Header />
+      </header>
+      <main>
         <MyTechnologies />
-        <section>
-          <h2 className=" pt-40">My Projects 🚀</h2>
-          <div className="flex flex-row flex-wrap justify-center mt-20 gap-5 p-10">
-            {CardData.map((card) => (
-              <Card
-                key={card.title}
-                title={card.title}
-                desc={card.desc}
-                btnText={card.btnText}
-                btnHref={card.btnHref}
-                imgSrc={card.imgSrc}
-              />
-            ))}
-          </div>
-        </section>
+        <MyProjects />
       </main>
-      <Background />
+      <Footer />
     </>
   );
 }

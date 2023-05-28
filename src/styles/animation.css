@@ -4,7 +4,7 @@
  * ----------------------------------------
  */
 
-@keyframes fade-in-top-5 {
+@keyframes fade-in-top {
     0% {
         transform: translateY(-10px);
         opacity: 0;
@@ -16,20 +16,8 @@
     }
 }
 
-@keyframes fade-in-top-6 {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.fade-in-top {
+    animation: fade-in-top 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /**
@@ -64,6 +52,11 @@
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.scale-in-center {
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
 }
 
 /**
@@ -106,6 +99,40 @@
     }
 }
 
+.pulse-fwd {
+    -webkit-animation: pulse-fwd 1.2s ease-in-out infinite both;
+    animation: pulse-fwd 1.2s ease-in-out infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * animation header gradient
+ * ----------------------------------------
+ */
+
+.header-gradient {
+    background: linear-gradient(243deg, rgb(64, 192, 235), rgb(138, 74, 227), #ffc62e);
+    background-clip: text;
+}
+
+.transition-all-02 {
+    transition: all 0.2s;
+}
+
+.animation-delay-300 {
+    animation-delay: 300ms !important;
+}
+
+.animation-delay-600 {
+    animation-delay: 600ms !important;
+}
+
+.animation-delay-800 {
+    animation-delay: 800ms !important;
+}
+
+/* used for the pulsing arrow */
+
 .fade-in {
     opacity: 1;
     transition: opacity 250ms ease-in;
@@ -116,29 +143,10 @@
     transition: opacity 250ms ease-in;
 }
 
-.fade-in-top-5 {
-    animation: fade-in-top-5 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.fade-in-top-6 {
-    animation-delay: 20s;
-    animation: fade-in-top-6 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000), both;
-}
-
-.scale-in-center {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
-}
-
-.transition-all-02 {
-    transition: all 0.2s;
+.transform-scale-hover {
+    transition: transform 200ms;
 }
 
 .transform-scale-hover:hover {
     transform: scale(1.2);
-}
-
-.pulse-fwd {
-    -webkit-animation: pulse-fwd 1.2s ease-in-out infinite both;
-    animation: pulse-fwd 1.2s ease-in-out infinite both;
 }
