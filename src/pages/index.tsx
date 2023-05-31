@@ -11,9 +11,7 @@ export default function Home() {
       <Head>
         <title>Davids Portfolio</title>
       </Head>
-      <header className="grid grid-rows-[100vh] mx-10">
-        <Header />
-      </header>
+      <Header />
       <main>
         <MyTechnologies />
         <MyProjects />

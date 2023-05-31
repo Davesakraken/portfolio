@@ -44,20 +44,13 @@ h3 {
 
 /* Dark Theme Globals */
 
-[data-theme="dark"] h3 {
-  @apply text-gray-300;
-}
-
 [data-theme="dark"] h2 {
   @apply text-gray-300;
 }
 
-[data-theme="dark"] li {
-  @apply text-gray-400;
-}
-
 [data-theme="dark"] .card-dark-mode {
-  @apply text-slate-200 bg-slate-700;
+  @apply text-slate-200;
+  background-color: #13171c;
 }
 
 /* scrollbar */

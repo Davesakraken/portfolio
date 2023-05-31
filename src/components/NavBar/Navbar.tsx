@@ -3,7 +3,7 @@ import ThemeChanger from "./ThemeChanger";
 
 export default function Navbar() {
   return (
-    <nav className="py-5">
+    <nav className="mt-8 lg:mr-5">
       <ul className="mt-5 lg:mr-5 flex item-center justify-center lg:justify-end text-4xl gap-12 text-gray-600">
         <li>
           <a href="https://www.linkedin.com/in/david-bell-39bb03265/" target="_blank">
