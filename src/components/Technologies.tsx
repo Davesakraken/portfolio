@@ -2,12 +2,10 @@ import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiNextdotjs, SiT
 import { useRef } from "react";
 
 export default function MyTechnologies() {
-  const technologyRef = useRef(null);
-
   return (
     <section id="technologies" className="text-center">
       <div>
-        <h2 ref={technologyRef}>Technologies I use ✨</h2>
+        <h2>Technologies I use ✨</h2>
         <div className="mt-20 text-6xl flex justify-center flex-wrap sm:gap-7 md:gap-15">
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
             <SiHtml5 className="transform-scale-hover text-orange-600 m-5 cursor-pointer" />
