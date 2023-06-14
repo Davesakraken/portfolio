@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function SubTitleChanger() {
   const [count, setCount] = useState(0);
-  const headingsArr = ["Frontend Developer", "Tea Enthusiast", "Spaniel Lover", "Skinfade Enjoyer", "Streaming Legend", "Flexbox Abuser"];
+  const headingsArr = ["Frontend Developer", "Tea Enthusiast", "Spaniel Lover", "Skinfade Enjoyer", "Stream Producer", "Flexbox Abuser"];
 
   const currentHeading = headingsArr[count];
 

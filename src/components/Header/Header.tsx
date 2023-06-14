@@ -1,8 +1,8 @@
 import selfie from "../../assets/selfie.png";
 import Image from "next/image";
 import Navbar from "../NavBar/Navbar";
-import NavigationArrow from "./NavigationArrow";
-import SubTitleChanger from "./SubTitleChanger";
+import NavigationArrow from "./NavArrow";
+import SubTitleChanger from "./HeadingChanger";
 
 export default function Heading() {
   return (
@@ -13,7 +13,17 @@ export default function Heading() {
           <h1 className="fade-in-top header-gradient md:text-7xl bg-clip-text text-transparent">David Bell</h1>
           <SubTitleChanger />
         </div>
-        <div className="lg:w-96 md:w-80 w-64 lg:mt-20 md:mt-16 mt-14 fade-in-top m-auto select-none ">
+        <div
+          className="lg:w-96 
+                    md:w-80 
+                    w-64 l
+                    g:mt-20 
+                    md:mt-16 
+                    mt-14 
+                    fade-in-top 
+                    m-auto 
+                    select-none"
+        >
           <Image src={selfie} alt="selfie image" />
         </div>
         <a>
