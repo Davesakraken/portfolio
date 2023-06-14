@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RxHamburgerMenu, RxCross2 } from "react-icons/Rx";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import styles from "./BurgerMenu.module.css";
 import ThemeChanger from "./ThemeChanger";
 
