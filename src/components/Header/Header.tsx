@@ -7,9 +7,9 @@ import SubTitleChanger from "./HeadingChanger";
 export default function Heading() {
   return (
     <header className="grid grid-cols-1 grid-rows-1">
-      <div className="h-[100svh]">
+      <div className="min-h-screen">
         <Navbar />
-        <div className="text-center select-none xl:mt-5">
+        <div className="text-center select-none mt-5">
           <h1 className="fade-in-top header-gradient md:text-7xl bg-clip-text text-transparent">David Bell</h1>
           <SubTitleChanger />
         </div>
@@ -26,9 +26,7 @@ export default function Heading() {
         >
           <Image src={selfie} alt="selfie image" />
         </div>
-        <a>
-          <NavigationArrow />
-        </a>
+        <NavigationArrow />
       </div>
     </header>
   );

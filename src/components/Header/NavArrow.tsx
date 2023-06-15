@@ -19,7 +19,7 @@ export default function NavigationArrow() {
 
   return (
     <div id="scroll-arrow" className={`nav-icon ${isScrolled ? "fade-out" : "fade-in"}`}>
-      <div className="flex justify-center text-4xl mt-20">
+      <div className="flex justify-center text-4xl mt-10 lg:mt-20">
         <BsArrowDownShort className="relative pulse-fwd fade-in" />
       </div>
     </div>

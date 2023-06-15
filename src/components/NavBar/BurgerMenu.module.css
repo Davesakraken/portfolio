@@ -1,11 +1,11 @@
 .slide {
-    transition: all 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     height: 0;
     opacity: 0;
     overflow: hidden;
 }
 
 .slideOpen {
-    height: 18rem;
+    height: 90svh;
     opacity: 1;
 }
