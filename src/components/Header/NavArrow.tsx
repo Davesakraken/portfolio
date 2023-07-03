@@ -6,7 +6,7 @@ export default function NavigationArrow() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 0);
     };
 
@@ -19,7 +19,7 @@ export default function NavigationArrow() {
 
   return (
     <div id="scroll-arrow" className={`nav-icon ${isScrolled ? "fade-out" : "fade-in"}`}>
-      <div className="flex justify-center text-4xl mt-10 lg:mt-20">
+      <div className="flex justify-center text-4xl pt-40">
         <BsArrowDownShort className="relative pulse-fwd fade-in" />
       </div>
     </div>

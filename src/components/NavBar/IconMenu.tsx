@@ -3,8 +3,8 @@ import ThemeChanger from "./ThemeChanger";
 
 export default function IconMenu() {
   return (
-    <nav className="hidden mt-8 mr-5 md:block">
-      <ul className="mt-5 mr-3 flex justify-end text-4xl gap-12 text-slate-600">
+    <nav className="hidden mt-12 md:block">
+      <ul className="flex justify-center text-4xl gap-16 text-slate-600">
         <li>
           <a href="https://www.linkedin.com/in/david-bell-39bb03265/" target="_blank">
             <BsLinkedin className="cursor-pointer" />

@@ -13,7 +13,7 @@ export default function Navbar() {
   const Icon = isOpen ? RxCross2 : RxHamburgerMenu;
 
   return (
-    <nav className="m-auto p-6 lg:pr-5 md:hidden text-3xl flex flex-col items-end">
+    <nav className="p-6 lg:pr-5 md:hidden text-3xl flex flex-col items-end">
       <Icon className="cursor-pointer text-slate-400" onClick={handleMenuToggle} />
       <ul className={`${styles.slide} ${isOpen ? styles.slideOpen : ""} flex flex-col justify-center items-center gap-12 w-full`}>
         <ThemeChanger />

@@ -1,21 +1,24 @@
-import { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
-export default function SubTitleChanger() {
-  const [count, setCount] = useState(0);
-  const headingsArr = ["Frontend Developer", "Tea Enthusiast", "Spaniel Lover", "Skinfade Enjoyer", "Stream Producer", "Flexbox Abuser"];
-
-  const currentHeading = headingsArr[count];
-
-  function handleTitleClick() {
-    setCount((prevCount) => (prevCount + 1) % headingsArr.length);
-  }
-
+export default function ExampleComponent() {
   return (
-    <h2
-      onClick={handleTitleClick}
-      className="text-3xl py-2 text-slate-600 fade-in-top animation-delay-800 cursor-pointer inline-block hover:text-slate-700"
-    >
-      {currentHeading}
-    </h2>
+    <div className="text-4xl py-2 text-slate-300 fade-in-top animation-delay-800">
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          "Frontend Developer",
+          3000, // wait 1s before replacing "Mice" with "Hamsters"
+          "Tea Enthusiast",
+          3000,
+          "Stream Producer",
+          3000,
+          "Flexbox Enjoyer",
+          3000,
+        ]}
+        wrapper="span"
+        speed={45}
+        repeat={Infinity}
+      />
+    </div>
   );
 }
