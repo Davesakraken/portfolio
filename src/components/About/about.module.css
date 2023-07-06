@@ -1,7 +1,7 @@
 .aboutBox {
     @apply rounded-3xl mt-1;
     width: 30rem;
-    height: 20rem;
+    height: 15rem;
     background-color: #26292f;
     box-shadow: 0px 0px 1px 2px #874ee3;
     filter: drop-shadow(1px 1px #f63465);
@@ -11,7 +11,7 @@
     @apply rounded-3xl mt-1;
     background: no-repeat url(../../assets/selfie.jpg);
     background-position: 50% 50%;
-    background-size: 130%;
-    width: 17rem;
-    height: 20rem;
+    background-size: 115%;
+    width: 15rem;
+    height: 15rem;
 }
