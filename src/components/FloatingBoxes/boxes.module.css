@@ -1,15 +1,15 @@
 .BoxContainer {
-    position: relative;
+    position: absolute;
     width: 208px;
     height: 208px;
-    left: calc(50vw + 320px);
-    bottom: calc(50vh + 290px);
+    left: calc(50vw + 270px);
+    bottom: calc(50vh + 50px);
 }
 
 .childOne,
 .childTwo,
 .childThree {
-    @apply absolute w-16 h-16 rounded-lg;
+    @apply absolute rounded-lg w-14 h-14;
 }
 
 .childOne {
@@ -17,7 +17,11 @@
     top: 5%;
     left: 5%;
     transform: translate(-40%, -40%);
-    animation: floatAnimationOne 7s ease-in-out infinite;
+    animation-name: scale-in-center, floatAnimationOne;
+    animation-duration: 0.5s, 7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 .childTwo {
@@ -36,6 +40,11 @@
     animation: floatAnimationThree 7s ease-in-out infinite;
 }
 
+.scale-in-center {
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 @keyframes floatAnimationOne {
     0% {
         transform: translate(-50%, -50%) rotate(0deg) scale(1);
@@ -48,7 +57,7 @@
     }
 
     40% {
-        transform: translate(-50%, -48%) rotate(-1deg) scale(0.98);
+        transform: translate(-53%, -46%) rotate(1deg) scale(0.98);
         opacity: 0.8;
     }
 
@@ -143,6 +152,35 @@
 
     100% {
         transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 1;
     }
 }

@@ -5,6 +5,7 @@ import About from "../components/About/About";
 import Technologies from "../components/Technologies";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import Boxes from "../components/FloatingBoxes/Boxes";
 
 export default function Home() {
   return (
