@@ -1,8 +1,9 @@
 import Head from "next/head";
 // Components
 import Header from "../components/Header/Header";
-import MyTechnologies from "../components/Technologies";
-import MyProjects from "../components/MyProjects";
+import About from "../components/About/About";
+import Technologies from "../components/Technologies";
+import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <MyTechnologies />
-        <MyProjects />
+        <About />
+        <Technologies />
+        <Projects />
       </main>
       <Footer />
     </>

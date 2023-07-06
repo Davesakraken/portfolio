@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gradient: linear-gradient(243deg, rgb(64, 192, 235), rgb(138, 74, 227), #ffc62e);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -30,10 +34,6 @@ h3 {
 
 [data-theme="dark"] h2 {
   @apply text-gray-300;
-}
-
-[data-theme="dark"] h2:hover {
-  @apply text-gray-200;
 }
 
 [data-theme="dark"] .card-dark-mode {

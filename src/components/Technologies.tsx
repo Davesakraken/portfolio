@@ -1,9 +1,8 @@
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
-import { useRef } from "react";
 
 export default function MyTechnologies() {
   return (
-    <section id="technologies" className="text-center">
+    <section id="technologies" className="text-center mt-52">
       <div>
         <h2>Technologies I use ✨</h2>
         <div className="mt-20 text-6xl flex justify-center flex-wrap sm:gap-7 md:gap-15">
