@@ -1,9 +1,15 @@
-.BoxContainer {
+.boxContainer {
     position: absolute;
     width: 208px;
     height: 208px;
     left: calc(50vw + 270px);
     bottom: calc(50vh + 50px);
+}
+
+@media only screen and (max-width: 978px) {
+    .boxContainer {
+        display: none;
+    }
 }
 
 .childOne,

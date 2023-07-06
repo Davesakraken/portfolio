@@ -1,9 +1,9 @@
 import styles from "./boxes.module.css";
 
-export default function Heading() {
+export default function Boxes() {
   return (
     <>
-      <div className={styles.BoxContainer}>
+      <div className={styles.boxContainer}>
         <div className={styles.childOne}></div>
         <div className={styles.childTwo}></div>
         <div className={styles.childThree}></div>
