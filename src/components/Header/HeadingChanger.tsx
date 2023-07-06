@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 
-export default function ExampleComponent() {
+export default function SubHeadingAnimation() {
   return (
     <div className="text-4xl py-2 text-slate-300 fade-in-top animation-delay-800">
       <TypeAnimation

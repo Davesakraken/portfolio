@@ -1,12 +1,12 @@
 .boxContainer {
     position: absolute;
-    width: 208px;
-    height: 208px;
-    left: calc(50vw + 270px);
+    width: 180px;
+    height: 180px;
+    left: calc(50vw + 190px);
     bottom: calc(50vh + 50px);
 }
 
-@media only screen and (max-width: 978px) {
+@media only screen and (max-width: 768px) {
     .boxContainer {
         display: none;
     }
@@ -15,178 +15,155 @@
 .childOne,
 .childTwo,
 .childThree {
-    @apply absolute rounded-lg w-14 h-14;
+    @apply absolute rounded-lg w-12 h-12;
+    transform: scale(0);
+    transform-origin: center;
 }
 
 .childOne {
     @apply bg-violet-500;
     top: 5%;
-    left: 5%;
-    transform: translate(-40%, -40%);
-    animation-name: scale-in-center, floatAnimationOne;
-    animation-duration: 0.5s, 7s;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1, infinite;
+    left: 35%;
+    animation: floatAnimationThree 7.3s 0.7s ease-in-out infinite,
+        scaleInCenter 0.7s ease-in-out;
 }
 
 .childTwo {
     @apply bg-violet-600;
     top: 5%;
-    left: 50%;
-    animation-delay: 0s;
-    animation-direction: alternate-reverse;
-    animation: floatAnimationTwo 7s ease-in-out infinite;
+    left: 80%;
+    animation: floatAnimationThree 8.2s 1s ease-in-out infinite,
+        scaleInCenter 0.7s 0.3s ease-in-out;
 }
 
 .childThree {
     @apply bg-violet-800;
     top: 50%;
-    left: 50%;
-    animation: floatAnimationThree 7s ease-in-out infinite;
-}
-
-.scale-in-center {
-    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    left: 80%;
+    animation: floatAnimationThree 9s 1.3s ease-in-out infinite,
+        scaleInCenter 0.7s 0.6s ease-in-out;
 }
 
 @keyframes floatAnimationOne {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 
     20% {
-        transform: translate(-50%, -52%) rotate(2deg) scale(1.05);
+        transform: translate(-40%, -42%) rotate(2deg) scale(1.02);
         opacity: 0.9;
     }
 
     40% {
-        transform: translate(-53%, -46%) rotate(1deg) scale(0.98);
+        transform: translate(-43%, -46%) rotate(1deg) scale(0.98);
         opacity: 0.8;
     }
 
     60% {
-        transform: translate(-50%, -49%) rotate(1deg) scale(1.02);
+        transform: translate(-40%, -49%) rotate(1deg) scale(1.02);
         opacity: 0.85;
     }
 
     80% {
-        transform: translate(-50%, -51%) rotate(-1deg) scale(1.01);
+        transform: translate(-40%, -41%) rotate(-1deg) scale(1.01);
         opacity: 0.95;
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 }
 
 @keyframes floatAnimationTwo {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 
     15% {
-        transform: translate(-50%, -47%) rotate(1deg) scale(1.04);
+        transform: translate(-40%, -47%) rotate(1deg) scale(1.02);
         opacity: 0.95;
     }
 
     30% {
-        transform: translate(-50%, -49%) rotate(-1deg) scale(0.98);
+        transform: translate(-40%, -49%) rotate(-1deg) scale(0.98);
         opacity: 0.9;
     }
 
     45% {
-        transform: translate(-50%, -53%) rotate(-1deg) scale(1.02);
+        transform: translate(-40%, -53%) rotate(-1deg) scale(1.02);
         opacity: 0.85;
     }
 
     60% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 0.95;
     }
 
     75% {
-        transform: translate(-50%, -47%) rotate(2deg) scale(1.03);
+        transform: translate(-40%, -47%) rotate(2deg) scale(1.03);
         opacity: 0.9;
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 }
 
 @keyframes floatAnimationThree {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 
     10% {
-        transform: translate(-50%, -48%) rotate(-1deg) scale(1.02);
+        transform: translate(-40%, -48%) rotate(-1deg) scale(1.02);
         opacity: 0.95;
     }
 
     25% {
-        transform: translate(-50%, -53%) rotate(2deg) scale(0.99);
+        transform: translate(-40%, -43%) rotate(2deg) scale(0.99);
         opacity: 0.9;
     }
 
     40% {
-        transform: translate(-50%, -49%) rotate(-1deg) scale(1.03);
+        transform: translate(-40%, -39%) rotate(-1deg) scale(1.03);
         opacity: 0.85;
     }
 
     55% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 0.95;
     }
 
     70% {
-        transform: translate(-50%, -51%) rotate(-2deg) scale(1.04);
+        transform: translate(-40%, -41%) rotate(-2deg) scale(1.04);
         opacity: 0.9;
     }
 
     90% {
-        transform: translate(-50%, -48%) rotate(1deg) scale(1.01);
+        transform: translate(-40%, -48%) rotate(1deg) scale(1.01);
         opacity: 0.95;
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+        transform: translate(-40%, -40%) rotate(0deg) scale(1);
         opacity: 1;
     }
 }
 
 
-@-webkit-keyframes scale-in-center {
+@keyframes scaleInCenter {
     0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        opacity: 1;
+        opacity: 0;
+        transform: translate(-40%, -40%) scale(0);
     }
 
     100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
         opacity: 1;
-    }
-}
-
-@keyframes scale-in-center {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 1;
+        transform: translate(-40%, -40%) scale(1);
     }
 }
