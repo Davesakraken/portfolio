@@ -6,7 +6,7 @@ export default function SubHeadingAnimation() {
       <TypeAnimation
         sequence={["Frontend Developer", 3000, "Tea Enthusiast", 3000, "Stream Producer", 3000, "Flexbox Enjoyer", 3000]}
         wrapper="span"
-        speed={45}
+        speed={43}
         repeat={Infinity}
       />
     </div>
