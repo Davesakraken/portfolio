@@ -1,7 +1,7 @@
-.aboutBox {
-    @apply rounded-3xl mt-1 italic;
-    width: 30rem;
-    height: 15rem;
+.boxes {
+    z-index: -1;
+    opacity: 50%;
+    @apply relative bottom-44 flex flex-row-reverse flex-wrap justify-end gap-2 w-28 h-auto;
 }
 
 .pictureBox {
@@ -12,4 +12,10 @@
     width: 12rem;
     height: 12rem;
     filter: drop-shadow(1px 1px 5px #0e0e0e);
+}
+
+.aboutBox {
+    @apply rounded-3xl mt-1 italic;
+    width: 30rem;
+    height: 15rem;
 }

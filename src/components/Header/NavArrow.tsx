@@ -1,5 +1,5 @@
 import { BsArrowDownShort } from "react-icons/bs";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function NavigationArrow() {
   const [isScrolled, setIsScrolled] = useState(false);

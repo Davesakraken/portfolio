@@ -1,6 +1,6 @@
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
-export default function MyTechnologies() {
+export default function Technologies() {
   return (
     <section id="technologies" className="text-center mt-52">
       <div>
