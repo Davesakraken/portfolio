@@ -1,5 +1,6 @@
 import lackinListApp from "../../assets/lackin-list-app.jpg";
 import ageCalculatorApp from "../../assets/age-calculator-app.jpg";
+import testimonialGridSection from "../../assets/testimonials-grid-section.jpg";
 import Tags from "./CardTags";
 
 export const cardData = [
@@ -21,5 +22,15 @@ export const cardData = [
     btnHref: "https://davesakraken.github.io/age-calculator-app/",
     gitHref: "https://github.com/Davesakraken/age-calculator-app",
     imgSrc: ageCalculatorApp,
+  },
+
+  {
+    title: "Testimonials Section",
+    desc: "A HTML and CSS challenge to demonstrate competency with CSS grid.",
+    cardTags: [Tags.html, Tags.css],
+    btnText: "Live demo",
+    btnHref: "https://davesakraken.github.io/Testimonials-grid-section/",
+    gitHref: "https://github.com/Davesakraken/Testimonials-grid-section",
+    imgSrc: testimonialGridSection,
   },
 ];
