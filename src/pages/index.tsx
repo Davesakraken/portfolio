@@ -1,10 +1,10 @@
 import Head from "next/head";
 // Components
-import Header from "../components/Header/Header";
-import About from "../components/About/About";
-import Technologies from "../components/Technologies";
-import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+import Header from "@/components/Header/Header";
+import About from "@/components/About/About";
+import Technologies from "@/components/Technologies";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
