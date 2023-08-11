@@ -1,4 +1,4 @@
-import styles from "./boxes.module.css";
+import styles from "@/components/FloatingBoxes/boxes.module.css";
 
 export default function Boxes() {
   return (
