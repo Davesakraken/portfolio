@@ -1,7 +1,7 @@
 import lackinListApp from "../../assets/lackin-list-app.jpg";
 import ageCalculatorApp from "../../assets/age-calculator-app.jpg";
 import testimonialGridSection from "../../assets/testimonials-grid-section.jpg";
-import ecommerceProductPage from "../../assets/Ecommerce-product-page.jpg";
+import ecommerceProductPage from "../../assets/ecommerce-product-page.jpg";
 import Tags from "./CardTags";
 
 export const cardData = [
