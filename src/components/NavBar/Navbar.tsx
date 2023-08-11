@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin, BsTwitch } from "react-icons/bs";
-import ThemeChanger from "@/components/NavBar/Navbar";
+import ThemeChanger from "@/components/NavBar/ThemeChanger";
 
 export default function NavBar() {
   return (
