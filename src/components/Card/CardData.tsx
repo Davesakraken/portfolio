@@ -1,6 +1,7 @@
 import lackinListApp from "../../assets/lackin-list-app.jpg";
 import ageCalculatorApp from "../../assets/age-calculator-app.jpg";
 import testimonialGridSection from "../../assets/testimonials-grid-section.jpg";
+import ecommerceProductPage from "../../assets/Ecommerce-product-page.jpg";
 import Tags from "./CardTags";
 
 export const cardData = [
@@ -22,6 +23,16 @@ export const cardData = [
     btnHref: "https://davesakraken.github.io/age-calculator-app/",
     gitHref: "https://github.com/Davesakraken/age-calculator-app",
     imgSrc: ageCalculatorApp,
+  },
+
+  {
+    title: "Ecommerce Product Page ",
+    desc: "A extensive frontend project demonstrating use of popular frontend libraries.",
+    cardTags: [Tags.html, Tags.ts, Tags.react, Tags.tailwind],
+    btnText: "Live demo",
+    btnHref: "https://davesakraken.github.io/ecommerce-product-page/",
+    gitHref: "https://github.com/Davesakraken/ecommerce-product-page",
+    imgSrc: ecommerceProductPage,
   },
 
   {

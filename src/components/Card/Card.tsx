@@ -15,7 +15,7 @@ interface Props {
 export default function Card({ title, desc, cardTags, btnText, btnHref, gitHref, imgSrc }: Props) {
   return (
     <div className="flex flex-wrap flex-col justify-center">
-      <div className="card-dark-mode max-w-sm rounded-lg shadow-md">
+      <div className="card-dark-mode hover:-translate-y-2 hover:scale-105 transition-all ease-in-out duration-300 max-w-sm rounded-lg shadow-md">
         {/* Heading Image */}
         <Image className="rounded-t-lg" src={imgSrc} alt="card-image" width={400} height={400} />
 
@@ -25,7 +25,7 @@ export default function Card({ title, desc, cardTags, btnText, btnHref, gitHref,
 
           {/* Title and Description */}
           <div className="text-left">
-            <h5 className="card-dark-mode mb-3 text-3xl font-bold tracking-tight text-slate-700">{title}</h5>
+            <h5 className="card-dark-mode mb-3 text-2xl font-bold tracking-tight text-slate-700">{title}</h5>
             <p className="card-dark-mode mb-6 font-normal text-gray-800 dark:text-gray-400">{desc}</p>
 
             {/* Buttons */}
