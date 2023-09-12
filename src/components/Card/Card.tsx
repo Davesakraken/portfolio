@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { BsGithub } from "react-icons/bs";
-import ArrowIcon from "@/components/Card/ArrowIcon";
+import ArrowIcon from "@/components/card/arrowIcon";
 
 interface Props {
   title: string;
@@ -14,10 +14,14 @@ interface Props {
 
 export default function Card({ title, desc, cardTags, btnText, btnHref, gitHref, imgSrc }: Props) {
   return (
-    <div className="flex flex-wrap flex-col justify-center">
-      <div className="card-dark-mode hover:-translate-y-2 hover:scale-105 transition-all ease-in-out duration-300 max-w-sm rounded-lg shadow-md">
+    <div className="flex flex-wrap flex-col justify-center max-w-sm">
+      <div className="card-dark-mode rounded-lg shadow-md overflow-hidden">
         {/* Heading Image */}
-        <Image className="rounded-t-lg" src={imgSrc} alt="card-image" width={400} height={400} />
+        <Image
+          className="rounded-t-lg hover:scale-105 hover:-translate-y-1 transition-transform duration-300 ease-in-out"
+          src={imgSrc}
+          alt="card-image"
+        />
 
         {/* Card Tags */}
         <div className="p-6">

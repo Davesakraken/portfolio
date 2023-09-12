@@ -2,7 +2,8 @@ import lackinListApp from "@/assets/lackin-list-app.jpg";
 import ageCalculatorApp from "@/assets/age-calculator-app.jpg";
 import testimonialGridSection from "@/assets/testimonials-grid-section.jpg";
 import ecommerceProductPage from "@/assets/ecommerce-product-page.jpg";
-import Tags from "@/components/Card/CardTags";
+import ipAddressTracker from "@/assets/ip-address-tracker-app.jpg";
+import Tags from "@/components/card/cardTags";
 
 export const cardData = [
   {
@@ -33,6 +34,16 @@ export const cardData = [
     btnHref: "https://davesakraken.github.io/ecommerce-product-page/",
     gitHref: "https://github.com/Davesakraken/ecommerce-product-page",
     imgSrc: ecommerceProductPage,
+  },
+
+  {
+    title: "IP Address Tracker",
+    desc: "A Next.js application using a public geolocation API",
+    cardTags: [Tags.html, Tags.ts, Tags.next, Tags.tailwind],
+    btnText: "Live demo",
+    btnHref: "https://ip-address-tracker-nine-lime.vercel.app/",
+    gitHref: "https://github.com/Davesakraken/ip-address-tracker",
+    imgSrc: ipAddressTracker,
   },
 
   {
