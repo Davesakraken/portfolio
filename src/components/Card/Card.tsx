@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { BsGithub } from "react-icons/bs";
-import ArrowIcon from "@/components/card/arrowIcon";
+import ArrowIcon from "@/components/card/ArrowIcon";
 
 interface Props {
   title: string;
