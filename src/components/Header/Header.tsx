@@ -1,8 +1,8 @@
-import BurgerMenu from "@/components/navBar/BurgerMenu";
-import Navbar from "@/components/navBar/Navbar";
-import HeadingChanger from "@/components/header/headingChanger";
-import NavArrow from "@/components/header/navArrow";
-import Boxes from "@/components/floatingBoxes/boxes";
+import BurgerMenu from "@/components/NavBar/BurgerMenu";
+import Navbar from "@/components/NavBar/Navbar";
+import HeadingChanger from "@/components/Header/HeadingChanger";
+import NavArrow from "@/components/Header/NavArrow";
+import Boxes from "@/components/FloatingBoxes/Boxes";
 
 export default function Header() {
   return (

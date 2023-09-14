@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import styles from "@/components/NavBar/BurgerMenu.module.css";
-import ThemeChanger from "@/components/navBar/ThemeChanger";
+import ThemeChanger from "@/components/NavBar/ThemeChanger";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

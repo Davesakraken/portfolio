@@ -3,7 +3,7 @@ import ageCalculatorApp from "@/assets/age-calculator-app.jpg";
 import testimonialGridSection from "@/assets/testimonials-grid-section.jpg";
 import ecommerceProductPage from "@/assets/ecommerce-product-page.jpg";
 import ipAddressTracker from "@/assets/ip-address-tracker-app.jpg";
-import Tags from "@/components/card/cardTags";
+import Tags from "@/components/Card/CardTags";
 
 export const cardData = [
   {
